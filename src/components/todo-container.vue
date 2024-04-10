@@ -11,9 +11,7 @@
         </v-sheet>
         <!-- Display footer for mobile screen only -->
         <TodoContainerFooterMobile />
-        <div v-if="appStore.toggleActive === 'all'" class="mt-10 text-body-1 text-darkGrayishBlue">
-            Drag and Drop to reorder list items
-        </div>
+        <DragDropMessage />
     </v-sheet>
 </template>
 
@@ -25,6 +23,7 @@ import TodoContainerFooterMobile from '@/components/todo-container-footer-mobile
 import TodoContainerHeader from '@/components/todo-container-header.vue';
 import TodoLine from '@/components/todo-line.vue';
 import TodoNewLine from '@/components/todo-new-line.vue';
+import DragDropMessage from '@/components/drag-drop-message.vue';
 import { VueDraggableNext } from 'vue-draggable-next'
 import { useAppStore } from '@/stores/app';
 
