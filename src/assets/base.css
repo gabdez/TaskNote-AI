@@ -10,6 +10,12 @@
   }
 }
 
+@media (width >= 1400px) {
+  .bg-contain {
+    background-size: contain !important;
+  }
+}
+
 *,
 *::before,
 *::after {
@@ -37,6 +43,7 @@ body {
 .dot {
   height: 20px;
   width: 20px;
+  min-width: 20px;
   border-radius: 50%;
   display: inline-block;
   border: 1px rgb(var(--v-theme-veryDarkGrayishBlue)) solid;
