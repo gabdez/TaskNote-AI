@@ -16,6 +16,10 @@
   }
 }
 
+html {
+  overflow: hidden !important;
+}
+
 *,
 *::before,
 *::after {
@@ -47,4 +51,36 @@ body {
   border-radius: 50%;
   display: inline-block;
   border: 1px rgb(var(--v-theme-veryDarkGrayishBlue)) solid;
+}
+
+/* SCROLLBAR */
+* {
+  --scrollbar-background-color: transparent;
+  --scrollbar-thumb-background-color: transparent;
+  --scrollbar-thickness: 6px;
+}
+@supports (-moz-appearance: none) {
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #beccd3 transparent;
+  }
+}
+/* CSS FOR CUSTOM SCROLLBAR */
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #beccd3;
+  border-radius: 5px;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: transparent;
 }
