@@ -48,6 +48,3 @@ body {
   display: inline-block;
   border: 1px rgb(var(--v-theme-veryDarkGrayishBlue)) solid;
 }
-.dot-hovered {
-  border-color: var(--v-theme-lightGrayishBlue);
-}

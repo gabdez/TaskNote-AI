@@ -1,5 +1,5 @@
 <template>
-    <v-sheet elevation="10" rounded class="w-100 d-flex ga-3 align-center px-5 py-3 mb-10 bg-veryDarkDesaturatedBlue">
+    <v-sheet elevation="10" rounded class="w-100 d-flex ga-3 align-center px-5 py-3 mb-10 bg-surface">
         <div class="bg-transparent dot">
         </div>
         <v-text-field v-model="newTodoInput" density="compact" class="pb-2" placeholder="Create a new todo..."
