@@ -17,7 +17,7 @@
 }
 
 html {
-  overflow: hidden !important;
+  overflow: auto !important;
 }
 
 *,

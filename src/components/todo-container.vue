@@ -2,13 +2,15 @@
     <v-sheet fluid max-width="750px" class="bg-transparent w-100 d-flex flex-column align-center">
         <TodoContainerHeader />
         <TodoNewLine />
-        <v-sheet class="w-100 todo-scrollable" elevation="10">
-            <VueDraggableNext class="dragArea list-group w-full" :list="appStore.filteredTodos" @change="log">
-                <TodoLine v-for="(todo, index) in appStore.filteredTodos" :key="todo.id" :todo
-                    :roundedCorner="index === 0" />
-            </VueDraggableNext>
+        <v-sheet class="w-100" elevation="10" rounded>
+            <v-sheet class="w-100 todo-scrollable" rounded>
+                <VueDraggableNext class="dragArea list-group w-full" :list="appStore.filteredTodos" @change="log">
+                    <TodoLine v-for="(todo, index) in appStore.filteredTodos" :key="todo.id" :todo
+                        :roundedCorner="index === 0" />
+                </VueDraggableNext>
+            </v-sheet>
+            <TodoContainerFooter />
         </v-sheet>
-        <TodoContainerFooter />
         <!-- Display footer for mobile screen only -->
         <TodoContainerFooterMobile />
         <DragDropMessage />
@@ -17,7 +19,7 @@
 
 <style scoped>
 .todo-scrollable {
-    max-height: 475px;
+    max-height: 50vh;
     overflow-y: scroll;
     overflow-x: hidden;
 }
