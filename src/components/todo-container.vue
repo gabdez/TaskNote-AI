@@ -4,7 +4,7 @@
         <TodoNewLine />
         <v-sheet class="w-100" elevation="10" rounded>
             <v-sheet class="w-100 todo-scrollable" rounded>
-                <VueDraggableNext class="dragArea list-group w-full" :list="appStore.filteredTodos" @change="log">
+                <VueDraggableNext class="dragArea list-group w-full" :list="appStore.filteredTodos">
                     <TodoLine v-for="(todo, index) in appStore.filteredTodos" :key="todo.id" :todo
                         :roundedCorner="index === 0" />
                 </VueDraggableNext>
@@ -36,10 +36,4 @@ import { VueDraggableNext } from 'vue-draggable-next'
 import { useAppStore } from '@/stores/app';
 
 const appStore = useAppStore();
-
-
-const log = (event: any) => {
-    console.log(event)
-};
-
 </script>
