@@ -21,13 +21,21 @@
 
 <script setup lang="ts">
 import TodoContainer from "@/components/todo-container.vue"
-import { computed } from "vue";
+import { computed, onMounted } from "vue";
 import { useTheme } from 'vuetify'
+import { useAppStore } from "./stores/app";
 
+const appStore = useAppStore();
 const theme = useTheme()
 
 const isDarkMode = computed(() => {
   return theme.global.current.value.dark;
 })
+
+onMounted(async () => {
+  const response = await fetch("./data.json");
+  const data = await response.json();
+  appStore.todos = data;
+});
 
 </script>
