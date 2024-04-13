@@ -7,12 +7,9 @@ import * as directives from 'vuetify/directives'
 const dark: ThemeDefinition = {
     dark: true,
     colors: {
-        primary: "hsl(220, 98%, 61%)",
+        primary: "#1A99DD",
         surface: "hsl(235, 24%, 19%)",
         borderColor: "hsl(234, 39%, 85%)",
-        checkBackground: "linear-gradient hsl(192, 100%, 67%) to hsl(280, 87%, 65%)",
-        veryDarkBlue: "hsl(235, 21%, 11%)",
-        lightGrayishBlueHover: "hsl(236, 33%, 92%)",
         darkGrayishBlue: "hsl(234, 11%, 52%)",
         veryDarkGrayishBlue: "hsl(233, 14%, 35%)",
     },
@@ -21,12 +18,9 @@ const dark: ThemeDefinition = {
 const light: ThemeDefinition = {
     dark: false,
     colors: {
-        primary: "hsl(220, 98%, 61%)",
+        primary: "#1A99DD",
         surface: "#FFFFFF",
         borderColor: "#000",
-        checkBackground: "linear-gradient hsl(192, 100%, 67%) to hsl(280, 87%, 65%)",
-        veryLightGray: "hsl(0, 0%, 98%)",
-        veryLightGrayishBlue: "hsl(236, 33%, 92%)",
         darkGrayishBlue: "hsl(236, 9%, 61%)",
         veryDarkGrayishBlue: "hsl(235, 19%, 35%)",
     },
@@ -38,6 +32,11 @@ export default createVuetify({
     directives,
     theme: {
         defaultTheme: "dark",
+        variations: {
+            colors: ['primary', 'secondary'],
+            lighten: 4,
+            darken: 4,
+        },
         themes: {
             dark,
             light

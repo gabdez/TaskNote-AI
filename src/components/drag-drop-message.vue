@@ -1,6 +1,6 @@
 <template>
     <div v-if="appStore.toggleActive === 'all' && appStore.todos.length > 0"
-        class="mt-10 text-body-1 text-darkGrayishBlue">
+        class="mt-10 text-body-1 font-weight-light">
         Drag and Drop to reorder list items
     </div>
 </template>

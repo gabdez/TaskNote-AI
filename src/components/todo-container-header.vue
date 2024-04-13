@@ -1,9 +1,9 @@
 <template>
     <v-sheet class="w-100 bg-transparent py-5 d-flex justify-space-between align-center">
         <v-text-field v-model="todolistTitle" hide-details variant="plain" counter="20"
-            class="text-white custom-todolist-title" />
+            class="text-primary custom-todolist-title" />
         <div>
-            <v-btn :icon="themeIcon" color="white" variant="plain" @click="toggleTheme" />
+            <v-btn :icon="themeIcon" variant="plain" @click="toggleTheme" />
         </div>
     </v-sheet>
 </template>
