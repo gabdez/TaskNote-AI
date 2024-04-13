@@ -1,39 +1,14 @@
-# todo-app
+# TaskNote AI
 
-This template should help get you started developing with Vue 3 in Vite.
+TaskNote AI is an innovative note-taking and task management application designed to help you stay organized and productive. With its integration of artificial intelligence, TaskNote AI provides an enriched and intuitive user experience.
 
-## Recommended IDE Setup
+## 🚀 Key Features:
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+- **📝 Easy Creation of Notes and Task Lists:** Quickly create notes and task lists to organize your ideas, daily tasks, and projects.
+- **🤖 Artificial Intelligence:** Enjoy intelligent features such as task suggestions based on your habits and automatic classification of notes.
+- **🎨 Customization:** Customize your notes and task lists with different themes, colors, and icons for organization that reflects your style.
+- **👥 Collaboration:** Share your notes and task lists with friends, family, or colleagues and work together efficiently.
 
-## Type Support for `.vue` Imports in TS
+## ❓ Why Choose TaskNote AI?
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Type-Check, Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+TaskNote AI combines the simplicity of a note-taking app with the power of artificial intelligence to offer you a comprehensive and effective solution for managing your tasks and projects. Whether you are a student, a professional, or just someone looking to stay organized, TaskNote AI is the tool you need to turn your ideas into action.
