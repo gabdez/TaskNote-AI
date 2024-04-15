@@ -14,11 +14,12 @@ import { useAppStore } from '@/stores/app';
 import { ref } from 'vue';
 
 const appStore = useAppStore();
+const emit = defineEmits(['createNewTodo'])
 
 const newTodoInput = ref("");
 const createNewTodo = () => {
     if (newTodoInput.value.trim()) {
-        appStore.createNewTodo(newTodoInput.value);
+        emit("createNewTodo", newTodoInput.value);
         newTodoInput.value = "";
     }
 };

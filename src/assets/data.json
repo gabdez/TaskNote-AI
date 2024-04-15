@@ -1,0 +1,52 @@
+[
+  {
+    "title": "Weekend Chores",
+    "tasks": [
+      "Vacuum the living room",
+      "Clean the bathroom",
+      "Take out the trash",
+      "Do the laundry",
+      "Water the plants"
+    ]
+  },
+  {
+    "title": "Work Tasks",
+    "tasks": [
+      "Send out client emails",
+      "Prepare presentation slides",
+      "Attend team meeting at 10 am",
+      "Review project proposal",
+      "Update task list for the week"
+    ]
+  },
+  {
+    "title": "Fitness Goals",
+    "tasks": [
+      "Go for a 30-minute run",
+      "Do 20 minutes of strength training",
+      "Stretch for 10 minutes",
+      "Drink 8 glasses of water",
+      "Track meals in a food diary"
+    ]
+  },
+  {
+    "title": "Personal Development",
+    "tasks": [
+      "Read for 30 minutes",
+      "Practice meditation for 15 minutes",
+      "Write in journal",
+      "Listen to a podcast episode",
+      "Learn a new skill for an hour"
+    ]
+  },
+  {
+    "title": "Grocery Shopping",
+    "tasks": [
+      "Buy fruits and vegetables",
+      "Get bread and milk",
+      "Purchase pasta and sauce",
+      "Pick up chicken and fish",
+      "Grab snacks and drinks for the week"
+    ]
+  }
+]

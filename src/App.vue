@@ -1,7 +1,7 @@
 <template>
   <v-app>
     <v-container fluid class="bg-custo h-100 pt-15 d-flex justify-center align-start">
-      <TodoListView />
+      <router-view />
     </v-container>
   </v-app>
 </template>
@@ -19,22 +19,18 @@
 </style>
 
 <script setup lang="ts">
-import TodoListView from "@/views/todo-list-view.vue"
-import { computed, onMounted } from "vue";
-import { useTheme } from 'vuetify'
+import { onMounted } from "vue";
 import { useAppStore } from "./stores/app";
+import type { TodoList } from '@/models/todos';
 
 const appStore = useAppStore();
-const theme = useTheme()
-
-const isDarkMode = computed(() => {
-  return theme.global.current.value.dark;
-})
 
 onMounted(async () => {
+  let data: TodoList[] = []
   const response = await fetch("./data.json");
-  const data = await response.json();
-  appStore.todos = data;
+  data = await response.json();
+  console.log(data);
+  appStore.todoList = data;
 });
 
 </script>

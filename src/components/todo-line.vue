@@ -3,7 +3,7 @@
         <template v-slot:default="{ isHovering, props }">
             <v-sheet border="borderColor b-sm" v-bind="props"
                 class="cursor-pointer w-100 d-flex ga-3 align-center justify-space-between px-5 py-3 bg-surface"
-                :class="{ 'rounded-top': roundedCorner }" @click="appStore.toggleActiveState(todo.id)">
+                :class="{ 'rounded-top': roundedCorner }" @click="emit('toggleTodo', todo.id)">
                 <div class="dot" :class="[todo.isCompleted ? 'dot-completed-todo bg-primary' : 'bg-transparent']">
                     <v-icon v-if="todo.isCompleted" color="white" class="mb-3" icon="mdi-check" size="x-small" />
                 </div>
@@ -12,7 +12,7 @@
                     {{ todo.title }}
                 </div>
                 <v-btn v-if="isHovering" max-height="28px" icon="mdi-close" variant="plain" size="x-small"
-                    @click.prevent="appStore.deleteTodo(todo.id)" />
+                    @click.prevent="emit('deleteTodo', todo.id)" />
             </v-sheet>
         </template>
     </v-hover>
@@ -40,6 +40,7 @@ const props = defineProps<{
     todo: Todo,
     roundedCorner: boolean
 }>();
+const emit = defineEmits(['deleteTodo', 'toggleTodo'])
 
 
 </script>

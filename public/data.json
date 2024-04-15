@@ -1,32 +1,157 @@
 [
   {
     "id": 1,
-    "title": "Complete online JavaScript course",
-    "isCompleted": true
+    "title": "Weekend Chores",
+    "content": [
+      {
+        "id": 1,
+        "title": "Vacuum the living room",
+        "isCompleted": false
+      },
+      {
+        "id": 2,
+        "title": "Clean the bathroom",
+        "isCompleted": false
+      },
+      {
+        "id": 3,
+        "title": "Take out the trash",
+        "isCompleted": false
+      },
+      {
+        "id": 4,
+        "title": "Do the laundry",
+        "isCompleted": false
+      },
+      {
+        "id": 5,
+        "title": "Water the plants",
+        "isCompleted": false
+      }
+    ]
   },
   {
     "id": 2,
-    "title": "Jog around the park 3x",
-    "isCompleted": false
+    "title": "Work Tasks",
+    "content": [
+      {
+        "id": 6,
+        "title": "Send out client emails",
+        "isCompleted": false
+      },
+      {
+        "id": 7,
+        "title": "Prepare presentation slides",
+        "isCompleted": false
+      },
+      {
+        "id": 8,
+        "title": "Attend team meeting at 10 am",
+        "isCompleted": false
+      },
+      {
+        "id": 9,
+        "title": "Review project proposal",
+        "isCompleted": false
+      },
+      {
+        "id": 10,
+        "title": "Update task list for the week",
+        "isCompleted": false
+      }
+    ]
   },
   {
     "id": 3,
-    "title": "10 minutes meditation",
-    "isCompleted": false
+    "title": "Fitness Goals",
+    "content": [
+      {
+        "id": 11,
+        "title": "Go for a 30-minute run",
+        "isCompleted": false
+      },
+      {
+        "id": 12,
+        "title": "Do 20 minutes of strength training",
+        "isCompleted": false
+      },
+      {
+        "id": 13,
+        "title": "Stretch for 10 minutes",
+        "isCompleted": false
+      },
+      {
+        "id": 14,
+        "title": "Drink 8 glasses of water",
+        "isCompleted": false
+      },
+      {
+        "id": 15,
+        "title": "Track meals in a food diary",
+        "isCompleted": false
+      }
+    ]
   },
   {
     "id": 4,
-    "title": "Read for 1 hour",
-    "isCompleted": false
+    "title": "Personal Development",
+    "content": [
+      {
+        "id": 16,
+        "title": "Read for 30 minutes",
+        "isCompleted": false
+      },
+      {
+        "id": 17,
+        "title": "Practice meditation for 15 minutes",
+        "isCompleted": false
+      },
+      {
+        "id": 18,
+        "title": "Write in journal",
+        "isCompleted": false
+      },
+      {
+        "id": 19,
+        "title": "Listen to a podcast episode",
+        "isCompleted": false
+      },
+      {
+        "id": 20,
+        "title": "Learn a new skill for an hour",
+        "isCompleted": false
+      }
+    ]
   },
   {
     "id": 5,
-    "title": "Pick up groceries",
-    "isCompleted": false
-  },
-  {
-    "id": 6,
-    "title": "Complete Todo App on Frontend Mentor",
-    "isCompleted": true
+    "title": "Grocery Shopping",
+    "content": [
+      {
+        "id": 21,
+        "title": "Buy fruits and vegetables",
+        "isCompleted": false
+      },
+      {
+        "id": 22,
+        "title": "Get bread and milk",
+        "isCompleted": false
+      },
+      {
+        "id": 23,
+        "title": "Purchase pasta and sauce",
+        "isCompleted": false
+      },
+      {
+        "id": 24,
+        "title": "Pick up chicken and fish",
+        "isCompleted": false
+      },
+      {
+        "id": 25,
+        "title": "Grab snacks and drinks for the week",
+        "isCompleted": false
+      }
+    ]
   }
 ]

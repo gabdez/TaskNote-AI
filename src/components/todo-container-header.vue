@@ -1,7 +1,7 @@
 <template>
     <v-sheet class="w-100 bg-transparent py-5 d-flex justify-space-between align-center">
-        <v-text-field v-model="todolistTitle" hide-details variant="plain" counter="20"
-            class="text-primary custom-todolist-title" />
+        <v-text-field :model-value="props.title" @update:model-value="updateTitle" hide-details variant="plain"
+            counter="20" class="text-primary custom-todolist-title" />
         <div>
             <v-btn :icon="themeIcon" variant="plain" @click="toggleTheme" />
         </div>
@@ -30,6 +30,10 @@ import { computed, ref } from 'vue';
 import { useTheme } from 'vuetify'
 
 const theme = useTheme()
+const emit = defineEmits(['updateTitle'])
+const props = defineProps<{
+    title: string
+}>();
 
 function toggleTheme() {
     theme.global.name.value = theme.global.current.value.dark ? 'light' : 'dark'
@@ -39,6 +43,8 @@ const themeIcon = computed(() => {
     return theme.global.current.value.dark ? "mdi-weather-sunny" : "mdi-moon-waning-crescent";
 })
 
-const todolistTitle = ref("My todo");
+const updateTitle = (newTitle: string) => {
+    emit("updateTitle", newTitle);
+}
 
 </script>

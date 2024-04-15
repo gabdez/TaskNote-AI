@@ -1,5 +1,5 @@
 <template>
-    <v-sheet v-if="appStore.todos.length > 0 && $vuetify.display.smAndDown" rounded elevation="10" min-height="48px"
+    <v-sheet v-if="props.displayFooter && $vuetify.display.smAndDown" rounded elevation="10" min-height="48px"
         class="mt-6 w-100 d-flex ga-3 justify-center align-center px-5 bg-surface">
         <div>
             <v-btn-toggle v-model="appStore.toggleActive" mandatory>
@@ -20,4 +20,7 @@
 import { useAppStore } from '@/stores/app';
 
 const appStore = useAppStore();
+const props = defineProps<{
+    displayFooter: boolean
+}>();
 </script>
