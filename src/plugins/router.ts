@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from "vue-router";
 import homepageView from "@/views/homepage-view.vue";
-import todoListView from "@/views/todo-list-view.vue";
+import todoView from "@/views/todo-view.vue";
 
 const routes = [
     {
@@ -9,7 +9,7 @@ const routes = [
     },
     { path: '/home-page', component: homepageView },
     { path: '/landing-page', component: homepageView },
-    { path: '/todo-list/:id', component: todoListView, props: true }
+    { path: '/todo-list/:id', component: todoView, props: true }
 ]
 
 const router = createRouter(

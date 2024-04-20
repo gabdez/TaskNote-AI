@@ -1,22 +1,18 @@
 <template>
-    <div class="text-uppercase">
-        <h2>
-            TaskNote.AI
-        </h2>
-        <v-sheet v-for="list in appStore.todoList" :key="list.id" rounded
-            @click="router.push({ path: `/todo-list/${list.id}` })">
-            {{ list.title }}
-        </v-sheet>
-    </div>
+    <v-container class="pt-15">
+        <v-row>
+            <v-col v-for="list in appStore.todoList" :key="list.id" cols="4">
+                <TodoCard :todolist="list" />
+            </v-col>
+        </v-row>
+    </v-container>
 </template>
 
 <style scoped></style>
 
 <script setup lang="ts">
+import TodoCard from '@/components/todo-card.vue';
 import { useAppStore } from '@/stores/app';
-import { useRouter, useRoute } from 'vue-router'
-
-const router = useRouter()
 
 const appStore = useAppStore();
 </script>

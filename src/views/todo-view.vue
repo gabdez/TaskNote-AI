@@ -1,21 +1,24 @@
 <template>
-    <v-sheet fluid max-width="750px" class="bg-transparent w-100 d-flex flex-column align-center">
-        <TodoContainerHeader :title="todoList.title" @update-title="updateTitle" />
-        <TodoNewLine @create-new-todo="createNewTodo" />
-        <v-sheet class="w-100" elevation="10" rounded>
-            <v-sheet class="w-100 todo-scrollable" rounded>
-                <VueDraggableNext class="dragArea list-group w-full" :list="filteredTodos">
-                    <TodoLine v-for="(todo, index) in filteredTodos" :key="todo.id" :todo :roundedCorner="index === 0"
-                        @delete-todo="deleteTodo" @toggle-todo="toggleTodoActiveState" />
-                </VueDraggableNext>
+    <v-container class="d-flex justify-center align-start">
+        <v-sheet max-width="750px" class="bg-transparent pt-15 w-100 d-flex flex-column align-center">
+            <TodoContainerHeader :title="todoList.title" @update-title="updateTitle" />
+            <TodoNewLine @create-new-todo="createNewTodo" />
+            <v-sheet class="w-100" elevation="10" rounded>
+                <v-sheet class="w-100 todo-scrollable" rounded>
+                    <VueDraggableNext class="dragArea list-group w-full" :list="filteredTodos">
+                        <TodoLine v-for="(todo, index) in filteredTodos" :key="todo.id" :todo
+                            :roundedCorner="index === 0" @delete-todo="deleteTodo"
+                            @toggle-todo="toggleTodoActiveState" />
+                    </VueDraggableNext>
+                </v-sheet>
+                <TodoContainerFooter :item-length="filteredTodos.length" :displayFooter="todoList.content.length > 0"
+                    @clear-completed-todo="appStore.clearCompletedTodos(Number(props.id))" />
             </v-sheet>
-            <TodoContainerFooter :item-length="filteredTodos.length" :displayFooter="todoList.content.length > 0"
-                @clear-completed-todo="appStore.clearCompletedTodos(Number(props.id))" />
+            <!-- Display footer for mobile screen only -->
+            <TodoContainerFooterMobile :displayFooter="todoList.content.length > 0" />
+            <DragDropMessage />
         </v-sheet>
-        <!-- Display footer for mobile screen only -->
-        <TodoContainerFooterMobile :displayFooter="todoList.content.length > 0" />
-        <DragDropMessage />
-    </v-sheet>
+    </v-container>
 </template>
 
 <style scoped>

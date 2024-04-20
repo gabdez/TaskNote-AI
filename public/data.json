@@ -4,154 +4,369 @@
     "title": "Weekend Chores",
     "content": [
       {
-        "id": 1,
+        "id": 101,
         "title": "Vacuum the living room",
-        "isCompleted": false
+        "isCompleted": true,
+        "creationDate": 1688016000000
       },
       {
-        "id": 2,
+        "id": 102,
         "title": "Clean the bathroom",
-        "isCompleted": false
+        "isCompleted": false,
+        "creationDate": 1688102400000
       },
       {
-        "id": 3,
+        "id": 103,
         "title": "Take out the trash",
-        "isCompleted": false
+        "isCompleted": true,
+        "creationDate": 1688188800000
       },
       {
-        "id": 4,
+        "id": 104,
         "title": "Do the laundry",
-        "isCompleted": false
+        "isCompleted": false,
+        "creationDate": 1688275200000
       },
       {
-        "id": 5,
+        "id": 105,
         "title": "Water the plants",
-        "isCompleted": false
+        "isCompleted": true,
+        "creationDate": 1688361600000
       }
-    ]
+    ],
+    "creationDate": 1688016000000
   },
   {
     "id": 2,
     "title": "Work Tasks",
     "content": [
       {
-        "id": 6,
+        "id": 201,
         "title": "Send out client emails",
-        "isCompleted": false
+        "isCompleted": true,
+        "creationDate": 1688448000000
       },
       {
-        "id": 7,
+        "id": 202,
         "title": "Prepare presentation slides",
-        "isCompleted": false
+        "isCompleted": false,
+        "creationDate": 1688534400000
       },
       {
-        "id": 8,
+        "id": 203,
         "title": "Attend team meeting at 10 am",
-        "isCompleted": false
+        "isCompleted": false,
+        "creationDate": 1688620800000
       },
       {
-        "id": 9,
+        "id": 204,
         "title": "Review project proposal",
-        "isCompleted": false
+        "isCompleted": false,
+        "creationDate": 1688707200000
       },
       {
-        "id": 10,
+        "id": 205,
         "title": "Update task list for the week",
-        "isCompleted": false
+        "isCompleted": false,
+        "creationDate": 1688793600000
       }
-    ]
+    ],
+    "creationDate": 1688448000000
   },
   {
     "id": 3,
     "title": "Fitness Goals",
     "content": [
       {
-        "id": 11,
+        "id": 301,
         "title": "Go for a 30-minute run",
-        "isCompleted": false
+        "isCompleted": true,
+        "creationDate": 1688880000000
       },
       {
-        "id": 12,
+        "id": 302,
         "title": "Do 20 minutes of strength training",
-        "isCompleted": false
+        "isCompleted": true,
+        "creationDate": 1688966400000
       },
       {
-        "id": 13,
+        "id": 303,
         "title": "Stretch for 10 minutes",
-        "isCompleted": false
+        "isCompleted": false,
+        "creationDate": 1689052800000
       },
       {
-        "id": 14,
+        "id": 304,
         "title": "Drink 8 glasses of water",
-        "isCompleted": false
+        "isCompleted": true,
+        "creationDate": 1689139200000
       },
       {
-        "id": 15,
+        "id": 305,
         "title": "Track meals in a food diary",
-        "isCompleted": false
+        "isCompleted": true,
+        "creationDate": 1689225600000
       }
-    ]
+    ],
+    "creationDate": 1688880000000
   },
   {
     "id": 4,
     "title": "Personal Development",
     "content": [
       {
-        "id": 16,
+        "id": 401,
         "title": "Read for 30 minutes",
-        "isCompleted": false
+        "isCompleted": true,
+        "creationDate": 1689312000000
       },
       {
-        "id": 17,
+        "id": 402,
         "title": "Practice meditation for 15 minutes",
-        "isCompleted": false
+        "isCompleted": true,
+        "creationDate": 1689398400000
       },
       {
-        "id": 18,
+        "id": 403,
         "title": "Write in journal",
-        "isCompleted": false
+        "isCompleted": true,
+        "creationDate": 1689484800000
       },
       {
-        "id": 19,
+        "id": 404,
         "title": "Listen to a podcast episode",
-        "isCompleted": false
+        "isCompleted": false,
+        "creationDate": 1689571200000
       },
       {
-        "id": 20,
+        "id": 405,
         "title": "Learn a new skill for an hour",
-        "isCompleted": false
+        "isCompleted": false,
+        "creationDate": 1689657600000
       }
-    ]
+    ],
+    "creationDate": 1689312000000
   },
   {
     "id": 5,
     "title": "Grocery Shopping",
     "content": [
       {
-        "id": 21,
+        "id": 501,
         "title": "Buy fruits and vegetables",
-        "isCompleted": false
+        "isCompleted": false,
+        "creationDate": 1689744000000
       },
       {
-        "id": 22,
+        "id": 502,
         "title": "Get bread and milk",
-        "isCompleted": false
+        "isCompleted": false,
+        "creationDate": 1689830400000
       },
       {
-        "id": 23,
+        "id": 503,
         "title": "Purchase pasta and sauce",
-        "isCompleted": false
+        "isCompleted": false,
+        "creationDate": 1689916800000
       },
       {
-        "id": 24,
+        "id": 504,
         "title": "Pick up chicken and fish",
-        "isCompleted": false
+        "isCompleted": false,
+        "creationDate": 1690003200000
       },
       {
-        "id": 25,
+        "id": 505,
         "title": "Grab snacks and drinks for the week",
-        "isCompleted": false
+        "isCompleted": false,
+        "creationDate": 1690089600000
       }
-    ]
+    ],
+    "creationDate": 1689744000000
+  },
+  {
+    "id": 6,
+    "title": "Weekend Chores",
+    "content": [
+      {
+        "id": 601,
+        "title": "Vacuum the living room",
+        "isCompleted": false,
+        "creationDate": 1688016000000
+      },
+      {
+        "id": 602,
+        "title": "Clean the bathroom",
+        "isCompleted": false,
+        "creationDate": 1688102400000
+      },
+      {
+        "id": 603,
+        "title": "Take out the trash",
+        "isCompleted": false,
+        "creationDate": 1688188800000
+      },
+      {
+        "id": 604,
+        "title": "Do the laundry",
+        "isCompleted": false,
+        "creationDate": 1688275200000
+      },
+      {
+        "id": 605,
+        "title": "Water the plants",
+        "isCompleted": true,
+        "creationDate": 1688361600000
+      }
+    ],
+    "creationDate": 1688016000000
+  },
+  {
+    "id": 7,
+    "title": "Work Tasks",
+    "content": [
+      {
+        "id": 701,
+        "title": "Send out client emails",
+        "isCompleted": false,
+        "creationDate": 1688448000000
+      },
+      {
+        "id": 702,
+        "title": "Prepare presentation slides",
+        "isCompleted": false,
+        "creationDate": 1688534400000
+      },
+      {
+        "id": 703,
+        "title": "Attend team meeting at 10 am",
+        "isCompleted": false,
+        "creationDate": 1688620800000
+      },
+      {
+        "id": 704,
+        "title": "Review project proposal",
+        "isCompleted": true,
+        "creationDate": 1688707200000
+      },
+      {
+        "id": 705,
+        "title": "Update task list for the week",
+        "isCompleted": true,
+        "creationDate": 1688793600000
+      }
+    ],
+    "creationDate": 1688448000000
+  },
+  {
+    "id": 8,
+    "title": "Fitness Goals",
+    "content": [
+      {
+        "id": 801,
+        "title": "Go for a 30-minute run",
+        "isCompleted": true,
+        "creationDate": 1688880000000
+      },
+      {
+        "id": 802,
+        "title": "Do 20 minutes of strength training",
+        "isCompleted": false,
+        "creationDate": 1688966400000
+      },
+      {
+        "id": 803,
+        "title": "Stretch for 10 minutes",
+        "isCompleted": true,
+        "creationDate": 1689052800000
+      },
+      {
+        "id": 804,
+        "title": "Drink 8 glasses of water",
+        "isCompleted": false,
+        "creationDate": 1689139200000
+      },
+      {
+        "id": 805,
+        "title": "Track meals in a food diary",
+        "isCompleted": true,
+        "creationDate": 1689225600000
+      }
+    ],
+    "creationDate": 1688880000000
+  },
+  {
+    "id": 9,
+    "title": "Personal Development",
+    "content": [
+      {
+        "id": 901,
+        "title": "Read for 30 minutes",
+        "isCompleted": false,
+        "creationDate": 1689312000000
+      },
+      {
+        "id": 902,
+        "title": "Practice meditation for 15 minutes",
+        "isCompleted": true,
+        "creationDate": 1689398400000
+      },
+      {
+        "id": 903,
+        "title": "Write in journal",
+        "isCompleted": false,
+        "creationDate": 1689484800000
+      },
+      {
+        "id": 904,
+        "title": "Listen to a podcast episode",
+        "isCompleted": false,
+        "creationDate": 1689571200000
+      },
+      {
+        "id": 905,
+        "title": "Learn a new skill for an hour",
+        "isCompleted": true,
+        "creationDate": 1689657600000
+      }
+    ],
+    "creationDate": 1689312000000
+  },
+  {
+    "id": 10,
+    "title": "Grocery Shopping",
+    "content": [
+      {
+        "id": 1001,
+        "title": "Buy fruits and vegetables",
+        "isCompleted": false,
+        "creationDate": 1689744000000
+      },
+      {
+        "id": 1002,
+        "title": "Get bread and milk",
+        "isCompleted": false,
+        "creationDate": 1689830400000
+      },
+      {
+        "id": 1003,
+        "title": "Purchase pasta and sauce",
+        "isCompleted": true,
+        "creationDate": 1689916800000
+      },
+      {
+        "id": 1004,
+        "title": "Pick up chicken and fish",
+        "isCompleted": true,
+        "creationDate": 1690003200000
+      },
+      {
+        "id": 1005,
+        "title": "Grab snacks and drinks for the week",
+        "isCompleted": false,
+        "creationDate": 1690089600000
+      }
+    ],
+    "creationDate": 1689744000000
   }
 ]

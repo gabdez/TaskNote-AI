@@ -1,10 +1,12 @@
 export interface TodoList {
     id: number;
     title: string;
-    content: Todo[]
+    content: Todo[],
+    creationDate: number
 }
 export interface Todo {
     id: number;
     title: string;
-    isCompleted: boolean
+    isCompleted: boolean,
+    creationDate: number
 }

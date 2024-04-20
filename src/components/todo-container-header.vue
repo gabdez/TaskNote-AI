@@ -1,14 +1,16 @@
 <template>
-    <v-sheet class="w-100 bg-transparent py-5 d-flex justify-space-between align-center">
+    <v-sheet class="w-100 bg-transparent py-5 d-flex justify-space-between align-center text-center">
+        <v-btn class="transition-x-left-sm" icon="mdi-arrow-left" variant="plain" @click="returnHome" />
         <v-text-field :model-value="props.title" @update:model-value="updateTitle" hide-details variant="plain"
-            counter="20" class="text-primary custom-todolist-title" />
-        <div>
-            <v-btn :icon="themeIcon" variant="plain" @click="toggleTheme" />
-        </div>
+            counter="20" class=" custom-todolist-title" />
     </v-sheet>
 </template>
 
 <style scoped>
+.transition-x-left-sm:hover {
+    transform: translateX(-5px);
+}
+
 .letter-spacing {
     letter-spacing: 10px !important;
 }
@@ -22,29 +24,24 @@
     font-weight: 500 !important;
     letter-spacing: 6px !important;
     padding-top: 0px;
+    text-align: center;
 }
 </style>
 
 <script setup lang="ts">
-import { computed, ref } from 'vue';
-import { useTheme } from 'vuetify'
-
-const theme = useTheme()
+import { useRouter } from 'vue-router'
 const emit = defineEmits(['updateTitle'])
 const props = defineProps<{
     title: string
 }>();
-
-function toggleTheme() {
-    theme.global.name.value = theme.global.current.value.dark ? 'light' : 'dark'
-}
-
-const themeIcon = computed(() => {
-    return theme.global.current.value.dark ? "mdi-weather-sunny" : "mdi-moon-waning-crescent";
-})
+const router = useRouter()
 
 const updateTitle = (newTitle: string) => {
     emit("updateTitle", newTitle);
+}
+
+const returnHome = () => {
+    router.push({ path: "/home-page" })
 }
 
 </script>

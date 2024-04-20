@@ -15,10 +15,12 @@ export const useAppStore = defineStore('app', () => {
     const tl = todoList.value.find(t => t.id === todoListId);
     if (tl) {
       const newId = Math.floor(Math.random() * 100000);
+      const creationDate = Date.now();
       const newTodo: Todo = {
         id: newId,
         title: input,
-        isCompleted: false
+        isCompleted: false,
+        creationDate
       }
       tl.content.unshift(newTodo);
     }
