@@ -8,9 +8,6 @@ export const useAppStore = defineStore('app', () => {
   const todos: Ref<Todo[]> = ref([]);
   const toggleActive = ref("all");
 
-
-
-
   const createNewTodo = (todoListId: number, input: string) => {
     const tl = todoList.value.find(t => t.id === todoListId);
     if (tl) {
@@ -54,7 +51,21 @@ export const useAppStore = defineStore('app', () => {
     }
   };
 
+  // List methods
+  const createNewList = (newListTitle: string) => {
+    const newId = Math.floor(Math.random() * 100000);
+    const creationDate = Date.now();
+    const newList: TodoList = {
+      id: newId,
+      title: newListTitle,
+      creationDate,
+      content: []
+    }
+    todoList.value.unshift(newList);
+  };
+
+
   return {
-    todos, todoList, createNewTodo, toggleActive, toggleActiveState, deleteTodo, clearCompletedTodos
+    todos, todoList, createNewTodo, toggleActive, toggleActiveState, deleteTodo, clearCompletedTodos, createNewList
   }
 })

@@ -1,6 +1,6 @@
 <template>
     <v-sheet border="sm" rounded
-        class="position-relative d-flex flex-column w-100 pa-5 bg-surface cursor-pointer custom-todolist-card"
+        class="position-relative d-flex flex-column w-100 pa-5 bg-surface cursor-pointer custom-hover-effect translate-y-hover-sm"
         height="250px" width="350px" @click="router.push({ path: `/todo-list/${props.todolist.id}` })">
         <div class="todo-card-title text-h5">
             {{ props.todolist.title }}
@@ -18,11 +18,14 @@
             </div>
         </div>
         <div class="position-absolute bottom-right-position">
-            <v-chip>
+            <v-chip v-if="props.todolist.content.length > 0">
                 {{ props.todolist.content.filter(t => t.isCompleted).length }}
                 /
                 {{ props.todolist.content.length }}
                 <v-icon class="ml-1" size="small" icon="mdi-check" />
+            </v-chip>
+            <v-chip v-else>
+                no content
             </v-chip>
         </div>
     </v-sheet>
@@ -40,17 +43,6 @@
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
-}
-
-.custom-todolist-card:hover {
-    box-shadow: 0px 4px 100px -40px rgba(26, 153, 221, .70);
-    border-color: rgb(var(--v-theme-primary)) !important;
-    transition: 0.2s;
-    transform: translateY(-4px);
-}
-
-.custom-todolist-card {
-    transition: 0.2s;
 }
 </style>
 

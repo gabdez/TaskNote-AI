@@ -10,10 +10,8 @@
 <style scoped></style>
 
 <script setup lang="ts">
-import { useAppStore } from '@/stores/app';
 import { ref } from 'vue';
 
-const appStore = useAppStore();
 const emit = defineEmits(['createNewTodo'])
 
 const newTodoInput = ref("");

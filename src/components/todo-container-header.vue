@@ -2,7 +2,7 @@
     <v-sheet class="w-100 bg-transparent py-5 d-flex justify-space-between align-center text-center">
         <v-btn class="transition-x-left-sm" icon="mdi-arrow-left" variant="plain" @click="returnHome" />
         <v-text-field :model-value="props.title" @update:model-value="updateTitle" hide-details variant="plain"
-            counter="20" class=" custom-todolist-title" />
+            counter="20" class="custom-todolist-title" />
     </v-sheet>
 </template>
 
@@ -15,7 +15,7 @@
     letter-spacing: 10px !important;
 }
 
-.custom-todolist-title>>>input {
+.custom-todolist-title :deep(input) {
     font-size: 2.125rem !important;
     font-weight: 400;
     line-height: 2.5rem;
@@ -25,6 +25,10 @@
     letter-spacing: 6px !important;
     padding-top: 0px;
     text-align: center;
+}
+
+.custom-todolist-title:hover :deep(input) {
+    color: rgb(var(--v-theme-primary));
 }
 </style>
 
