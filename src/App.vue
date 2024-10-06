@@ -1,7 +1,7 @@
 <template>
   <v-app>
     <!-- Header -->
-    <v-app-bar elevation="0" color="transparent">
+    <v-app-bar elevation="0" scroll-behavior="hide" color="transparent">
       <v-app-bar-title class="text-h4 custom-font-weight-bold text-uppercase">
         SmartNote<span class="text-primary">.AI</span>
       </v-app-bar-title>
